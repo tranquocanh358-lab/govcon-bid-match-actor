@@ -1,0 +1,47 @@
+{
+  "title": "GovCon Bid Match Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "capabilityProfile": {
+      "title": "Contractor capability profile",
+      "type": "object",
+      "description": "Describe the contractor so public opportunities can be ranked by fit.",
+      "editor": "json",
+      "default": {
+        "keywords": ["software development", "cloud", "cybersecurity"],
+        "naicsCodes": ["541511", "541512", "541513", "541519"],
+        "setAsideTypes": [],
+        "states": [],
+        "agencies": []
+      }
+    },
+    "lookbackDays": {
+      "title": "Posted within last N days",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 365,
+      "default": 30
+    },
+    "maxResults": {
+      "title": "Maximum matched opportunities",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 500,
+      "default": 50
+    },
+    "onlyOpen": {
+      "title": "Only opportunities with an active response window",
+      "type": "boolean",
+      "default": true
+    },
+    "minFitScore": {
+      "title": "Minimum fit score",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 35
+    }
+  },
+  "required": ["capabilityProfile"]
+}
