@@ -1,0 +1,12 @@
+{
+  "name": "govcon-bid-match-actor",
+  "version": "0.2.0",
+  "description": "Match public SAM.gov contract opportunities to a contractor capability profile and rank them by fit.",
+  "type": "module",
+  "scripts": { "start": "node src/main.js" },
+  "dependencies": {
+    "apify": "^3.6.0",
+    "csv-parse": "^6.1.0"
+  },
+  "engines": { "node": ">=20" }
+}
