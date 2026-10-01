@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "govcon-bid-match",
+  "title": "GovCon Bid Match & Qualification",
+  "description": "Match active U.S. federal contract opportunities from the public SAM.gov bulk extract to a contractor capability profile, rank by fit, and return structured bid/no-bid signals.",
+  "version": "0.2",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "storages": { "dataset": "./dataset_schema.json" }
+}
