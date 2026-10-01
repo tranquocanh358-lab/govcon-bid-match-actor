@@ -1,0 +1,23 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "kind": {"type": "string"},
+    "fitScore": {"type": "number"},
+    "decision": {"type": "string"},
+    "title": {"type": "string"},
+    "noticeId": {"type": "string"},
+    "solicitationNumber": {"type": "string"},
+    "noticeType": {"type": "string"},
+    "naicsCodes": {"type": "array", "items": {"type": "string"}},
+    "setAside": {"type": "string"},
+    "agency": {"type": "string"},
+    "state": {"type": "string"},
+    "postedDate": {"type": "string"},
+    "responseDeadline": {"type": "string"},
+    "daysToDeadline": {"type": "number"},
+    "fitReasons": {"type": "array", "items": {"type": "string"}},
+    "riskFlags": {"type": "array", "items": {"type": "string"}},
+    "samUrl": {"type": "string"},
+    "source": {"type": "string"}
+  }
+}
